@@ -21,11 +21,9 @@ This is an ongoing project that will be used to support Solent's level 6 DevOps 
 - Copy the `.env.local.example` file in this directory to .env.local, which will be ignored by Git)
 
   - Set your `MONGODB_URI` with the the MongoDB connection string.
-  
+
 - Run the development server: `npm run dev`
 
-- To seed the database, visit http://localhost:3000/ap/utility/
+- To seed the database, visit `http://localhost:3000/api/utility/`
 
 - Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-
