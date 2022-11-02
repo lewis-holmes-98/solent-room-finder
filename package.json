@@ -17,7 +17,8 @@
     "test-storybook": "test-storybook",
     "cypress:open": "cypress open",
     "cypress:run:chrome": "cypress run --browser chrome",
-    "cypress:run": "cypress run"
+    "cypress:run": "cypress run",
+    "cypress:install": "cypress install"
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",

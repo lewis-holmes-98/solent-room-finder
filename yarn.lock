@@ -2288,9 +2288,9 @@
     "tmp-promise" "^3.0.3"
     "uuid" "^8.3.2"
 
-"@netlify/esbuild-darwin-arm64@0.14.25":
-  "integrity" "sha512-jfX7SY2ZD4NzSCDHZiAJfHKoqINxymToWv5LUml5/FJa6602o+x+ghg8vFezVaap1XTr+ULdFbHOEiqKpeFl+A=="
-  "resolved" "https://registry.npmjs.org/@netlify/esbuild-darwin-arm64/-/esbuild-darwin-arm64-0.14.25.tgz"
+"@netlify/esbuild-windows-64@0.14.25":
+  "integrity" "sha512-BgIxcEcqr4pfRc9fXStIXQVpjIkBUc3XHFEjH2t2R9pcEDU4BpMsdBgj0UA2x3Z0KtwVLLCOZDvSiaL+WkiTqA=="
+  "resolved" "https://registry.npmjs.org/@netlify/esbuild-windows-64/-/esbuild-windows-64-0.14.25.tgz"
   "version" "0.14.25"
 
 "@netlify/esbuild@0.14.25":
@@ -2353,9 +2353,9 @@
     "moize" "^6.0.0"
     "path-exists" "^5.0.0"
 
-"@netlify/local-functions-proxy-darwin-arm64@1.1.1":
-  "integrity" "sha512-lphJ9qqZ3glnKWEqlemU1LMqXxtJ/tKf7VzakqqyjigwLscXSZSb6fupSjQfd4tR1xqxA76ylws/2HDhc/gs+Q=="
-  "resolved" "https://registry.npmjs.org/@netlify/local-functions-proxy-darwin-arm64/-/local-functions-proxy-darwin-arm64-1.1.1.tgz"
+"@netlify/local-functions-proxy-win32-x64@1.1.1":
+  "integrity" "sha512-VCBXBJWBujVxyo5f+3r8ovLc9I7wJqpmgDn3ixs1fvdrER5Ac+SzYwYH4mUug9HI08mzTSAKZErzKeuadSez3w=="
+  "resolved" "https://registry.npmjs.org/@netlify/local-functions-proxy-win32-x64/-/local-functions-proxy-win32-x64-1.1.1.tgz"
   "version" "1.1.1"
 
 "@netlify/local-functions-proxy@^1.1.1":
@@ -2442,9 +2442,9 @@
   dependencies:
     "glob" "7.1.7"
 
-"@next/swc-darwin-arm64@12.2.3":
-  "integrity" "sha512-eutDO/RH6pf7+8zHo3i2GKLhF0qaMtxWpY8k3Oa1k+CyrcJ0IxwkfH/x3f75jTMeCrThn6Uu8j3WeZOxvhto1Q=="
-  "resolved" "https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-12.2.3.tgz"
+"@next/swc-win32-x64-msvc@12.2.3":
+  "integrity" "sha512-huSNb98KSG77Kl96CoPgCwom28aamuUsPpRmn/4s9L0RNbbHVSkp9E6HA4yOAykZCEuWcdNsRLbVVuAbt8rtIw=="
+  "resolved" "https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-12.2.3.tgz"
   "version" "12.2.3"
 
 "@nodelib/fs.scandir@2.1.5":
@@ -5852,13 +5852,6 @@
   "version" "2.2.0"
 
 "bindings@^1.4.0":
-  "integrity" "sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ=="
-  "resolved" "https://registry.npmjs.org/bindings/-/bindings-1.5.0.tgz"
-  "version" "1.5.0"
-  dependencies:
-    "file-uri-to-path" "1.0.0"
-
-"bindings@^1.5.0":
   "integrity" "sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ=="
   "resolved" "https://registry.npmjs.org/bindings/-/bindings-1.5.0.tgz"
   "version" "1.5.0"
@@ -10408,19 +10401,6 @@
   "resolved" "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   "version" "1.0.0"
 
-"fsevents@^1.2.7":
-  "integrity" "sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw=="
-  "resolved" "https://registry.npmjs.org/fsevents/-/fsevents-1.2.13.tgz"
-  "version" "1.2.13"
-  dependencies:
-    "bindings" "^1.5.0"
-    "nan" "^2.12.1"
-
-"fsevents@^2.1.2", "fsevents@^2.3.2", "fsevents@~2.3.2":
-  "integrity" "sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA=="
-  "resolved" "https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz"
-  "version" "2.3.2"
-
 "function-bind@^1.1.1":
   "integrity" "sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A=="
   "resolved" "https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz"
@@ -14695,11 +14675,6 @@
     "mkdirp" "~0.5.1"
     "ncp" "~2.0.0"
     "rimraf" "~2.4.0"
-
-"nan@^2.12.1":
-  "integrity" "sha512-2ZTgtl0nJsO0KQCjEpxcIr5D+Yv90plTitZt9JBfQvVJDS5seMl3FOvsh3+9CoYWXf/1l5OaZzzF6nDm4cagaQ=="
-  "resolved" "https://registry.npmjs.org/nan/-/nan-2.17.0.tgz"
-  "version" "2.17.0"
 
 "nano-time@1.0.0":
   "integrity" "sha512-flnngywOoQ0lLQOTRNexn2gGSNuM9bKj9RZAWSzhQ+UJYaAFG9bac4DW9VHjUAzrOaIcajHybCTHe/bkvozQqA=="
