@@ -1,6 +1,6 @@
 describe("Home Page Test", () => {
   beforeEach(() => {
-    cy.visit("/");
+    cy.visit("http://localhost:3000/");
   });
 
   it("shows a table containing a list of rooms", () => {

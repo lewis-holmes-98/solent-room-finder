@@ -13,6 +13,8 @@ tsconfig.tsbuildinfo
 /.next/
 /out/
 
+.env.test
+
 # production
 /build
 
