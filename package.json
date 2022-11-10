@@ -17,7 +17,8 @@
     "cypress:open": "cypress open",
     "cypress:run:chrome": "cypress run --browser chrome",
     "cypress:run": "cypress run",
-    "cypress:install": "cypress install"
+    "cypress:install": "cypress install",
+    "test": "cross-env NODE_ENV=test next dev"
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
@@ -51,6 +52,7 @@
     "@typescript-eslint/parser": "^5.39.0",
     "autoprefixer": "^10.4.7",
     "babel-loader": "^8.2.5",
+    "cross-env": "^7.0.3",
     "cypress": "^10.11.0",
     "eslint": "8.20.0",
     "eslint-config-next": "12.2.3",

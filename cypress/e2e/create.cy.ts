@@ -1,6 +1,6 @@
 describe("Create Room Test", () => {
   beforeEach(() => {
-    cy.visit("http://localhost:3000/create");
+    cy.visit("/create");
   });
 
   it("prevents a in-valid from from being submitted", () => {
@@ -28,6 +28,9 @@ describe("Create Room Test", () => {
     cy.getByData("capacity-error").should("not.exist");
     cy.getByData("type-input").eq(0).click();
   });
+
+  it("creates a room")
+
 });
 
 export {};
