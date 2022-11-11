@@ -40,7 +40,6 @@ describe("Create Room Test", () => {
     cy.getByData("room-item").should("have.length", 19);
     cy.getByData("room-item").contains(/JM12345/);
   });
-
 });
 
 export {};
