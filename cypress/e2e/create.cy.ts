@@ -29,8 +29,7 @@ describe("Create Room Test", () => {
     cy.getByData("type-input").eq(0).click();
   });
 
-  it("creates a room")
-
+  it("creates a room");
 });
 
 export {};
