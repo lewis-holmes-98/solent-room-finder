@@ -29,7 +29,18 @@ describe("Create Room Test", () => {
     cy.getByData("type-input").eq(0).click();
   });
 
-  it("creates a room");
+  it("creates a new room", () => {
+    cy.getByData("building-input").eq(0).click();
+    cy.getByData("number-input").type("12345");
+    cy.getByData("capacity-input").type("5");
+    cy.getByData("type-input").eq(0).click();
+    cy.getByData("submit-button").click();
+    cy.getByData("success-alert").should("exist");
+    cy.visit("/");
+    cy.getByData("room-item").should("have.length", 19);
+    cy.getByData("room-item").contains(/JM12345/);
+  });
+
 });
 
 export {};

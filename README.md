@@ -1,3 +1,5 @@
+![](https://github.com/lewis-holmes-98/solent-room-finder/actions/workflows/cypress.yaml/badge.svg)
+
 # Class Example
 
 This is an ongoing project that will be used to support Solent's level 6 DevOps module. It is a room tracking application created using Next.js.
