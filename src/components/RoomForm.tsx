@@ -1,12 +1,12 @@
 import {AdvancedImage} from "@cloudinary/react";
 import {thumbnail} from "@cloudinary/url-gen/actions/resize";
 import {CloudUploadIcon, TrashIcon} from "@heroicons/react/outline";
-import {useSession} from "next-auth/react";
 import {useEffect, useState} from "react";
 import {SubmitHandler, useForm} from "react-hook-form";
 import {SpinnerCircular} from "spinners-react";
 import {buildings, roomTypes} from "../data/";
 import useCloudinary from "../hooks/useCloudinary";
+import useSession from "../hooks/useNextAuth";
 
 export interface RoomFormProps {
   onSubmit: SubmitHandler<RoomValues>;
@@ -44,8 +44,10 @@ export default function RoomForm(props: RoomFormProps) {
 
   const {data} = useSession();
 
-  const [photos, setPhotos] = useState(values.photos ? values.photos[0] : [""]);
-  const [thumb, setThumb] = useState(values.photos ? values.photos[0] : "");
+  const [photos, setPhotos] = useState(
+    values?.photos ? values.photos[0] : [""]
+  );
+  const [thumb, setThumb] = useState(values?.photos ? values.photos[0] : "");
 
   useEffect(() => {
     if (triggerReset) {

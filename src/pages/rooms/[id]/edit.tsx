@@ -1,6 +1,5 @@
 import axios from "axios";
 import {GetServerSideProps} from "next";
-import {useSession} from "next-auth/react";
 import {useMutation} from "react-query";
 import dbConnect from "../../../../lib/dbConnect";
 import Room from "../../../../models/Room";
@@ -10,6 +9,7 @@ import RoomForm, {
   DatabaseRoomValues,
   RoomValues,
 } from "../../../components/RoomForm";
+import useSession from "./../../../hooks/useNextAuth";
 
 export default function Edit({room}: {room: DatabaseRoomValues}) {
   const {isLoading, isSuccess, isError, mutate} = useMutation(

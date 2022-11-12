@@ -1,12 +1,12 @@
 import {PencilIcon, PlusIcon, TrashIcon} from "@heroicons/react/outline";
 import axios from "axios";
 import {GetServerSideProps} from "next";
-import {useSession} from "next-auth/react";
 import Head from "next/head";
 import Link from "next/link";
 import {useRouter} from "next/router";
 import {useState} from "react";
 import {useMutation} from "react-query";
+import useSession from "../hooks/useNextAuth";
 
 import dbConnect from "../../lib/dbConnect";
 import Room from "../../models/Room";
