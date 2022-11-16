@@ -44,8 +44,10 @@ export default function RoomForm(props: RoomFormProps) {
 
   const {data} = useSession();
 
-  const [photos, setPhotos] = useState(values.photos ? values.photos[0] : [""]);
-  const [thumb, setThumb] = useState(values.photos ? values.photos[0] : "");
+  const [photos, setPhotos] = useState(
+    values?.photos ? values.photos[0] : [""]
+  );
+  const [thumb, setThumb] = useState(values?.photos ? values.photos[0] : "");
 
   useEffect(() => {
     if (triggerReset) {
@@ -113,7 +115,7 @@ export default function RoomForm(props: RoomFormProps) {
       )}
     >
       <div className="flex flex-col align-middle  space-y-2">
-        {JSON.stringify(photos)}
+        {/* {JSON.stringify(photos)} */}
         {thumb && (
           <>
             <TrashIcon
