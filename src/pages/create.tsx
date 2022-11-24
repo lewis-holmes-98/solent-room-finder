@@ -5,7 +5,6 @@ import Alert from "../components/Alert";
 import BreadCrumb from "../components/BreadCrumb";
 import RoomForm, {RoomValues} from "../components/RoomForm";
 
-
 export default function Create() {
   const {isLoading, isSuccess, isError, mutate} = useMutation(
     (room: RoomValues) => {
