@@ -1,12 +1,12 @@
 import {AdvancedImage} from "@cloudinary/react";
 import {thumbnail} from "@cloudinary/url-gen/actions/resize";
 import {CloudUploadIcon, TrashIcon} from "@heroicons/react/outline";
-import {useSession} from "next-auth/react";
 import {useEffect, useState} from "react";
 import {SubmitHandler, useForm} from "react-hook-form";
 import {SpinnerCircular} from "spinners-react";
 import {buildings, roomTypes} from "../data/";
 import useCloudinary from "../hooks/useCloudinary";
+import useSession from "../hooks/useNextAuth";
 
 export interface RoomFormProps {
   onSubmit: SubmitHandler<RoomValues>;
@@ -115,6 +115,7 @@ export default function RoomForm(props: RoomFormProps) {
       )}
     >
       <div className="flex flex-col align-middle  space-y-2">
+
         {/* {JSON.stringify(photos)} */}
         {thumb && (
           <>

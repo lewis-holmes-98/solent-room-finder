@@ -23,6 +23,9 @@ This is an ongoing project that will be used to support Solent's level 6 DevOps 
 - Copy the `.env.local.example` file in this directory to `.env.local`, which will be ignored by Git)
 
   - Set your `MONGODB_URI` with the the MongoDB connection string.
+  - Set your `MONGODB_MONGODB_URI_TEST` database to `mongodb://127.0.0.1:27017/rooms` if you are working locally. Or, if you are using Atlas MongoDB Atlas, it should be a string like this:
+
+  - `mongodb+srv://<username>:<password>@my-project-abc123.mongodb.net/rooms_test?retryWrites=true&w=majority`
 
 - Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
