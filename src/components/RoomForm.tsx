@@ -115,7 +115,8 @@ export default function RoomForm(props: RoomFormProps) {
       )}
     >
       <div className="flex flex-col align-middle  space-y-2">
-        {JSON.stringify(photos)}
+
+        {/* {JSON.stringify(photos)} */}
         {thumb && (
           <>
             <TrashIcon
