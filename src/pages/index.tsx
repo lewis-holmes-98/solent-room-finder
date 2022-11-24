@@ -58,7 +58,7 @@ export default function Home({rooms}) {
                   data-cy="add-room-button"
                   data-test="add-room-button"
                 >
-                  <PlusIcon className="h-5 w-5" /> Add Room
+                  <PlusIcon className="h-5 w-5" /> Add Room bit
                 </a>
               </Link>
             )}
