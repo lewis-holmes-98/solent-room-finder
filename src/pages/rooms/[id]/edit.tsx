@@ -10,7 +10,6 @@ import RoomForm, {
   DatabaseRoomValues,
   RoomValues,
 } from "../../../components/RoomForm";
-import useSession from "./../../../hooks/useNextAuth";
 
 export default function Edit({room}: {room: DatabaseRoomValues}) {
   const {isLoading, isSuccess, isError, mutate} = useMutation(

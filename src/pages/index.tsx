@@ -7,7 +7,6 @@ import Link from "next/link";
 import {useRouter} from "next/router";
 import {useState} from "react";
 import {useMutation} from "react-query";
-import useSession from "../hooks/useNextAuth";
 
 import dbConnect from "../../lib/dbConnect";
 import Room from "../../models/Room";
