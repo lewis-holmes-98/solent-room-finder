@@ -20,13 +20,11 @@ This is an ongoing project that will be used to support Solent's level 6 DevOps 
 
 `mongodb://127.0.0.1:27017/rooms`
 
-- Copy the `.env.local.example` file in this directory to .env.local, which will be ignored by Git)
+- To get authentication working, you will need to register a GitHubOauth application. [Full instructions on how to do this can be found in the notes](https://joeappleton18.github.io/devops_2022_2023_notes/week-7/#task-0-1-get-the-starter-application).
 
-  - Set your `MONGODB_URI` with the the MongoDB connection string.
-  - Set your `MONGODB_MONGODB_URI_TEST` database to `mongodb://127.0.0.1:27017/rooms` if you are working locally. Or, if you are using Atlas MongoDB Atlas, it should be a string like this:
+- To allow image uploads you will require a Cloudinary account
 
-  - `mongodb+srv://<username>:<password>@my-project-abc123.mongodb.net/rooms_test?retryWrites=true&w=majority`
-
+- Copy the `.env.local.example` file in this directory to .env.local, which will be ignored by Git), an populate the variables within it
 - Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 - Run the development server: `npm run dev`
